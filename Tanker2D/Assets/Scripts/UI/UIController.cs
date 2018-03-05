@@ -24,9 +24,8 @@ public class UIController : MonoBehaviour {
     }
 
     public StartUI startUI;
-    public PauseUI pauseUI;
+    public GameUI gameUI;
     public GameoverUI gameoverUI;
-    public GameObject GameControl;
     public bool isPause;
 
     // Use this for initialization
@@ -44,32 +43,21 @@ public class UIController : MonoBehaviour {
     public void ShowStartUI()
     {
         startUI.gameObject.SetActive(true);
-        pauseUI.gameObject.SetActive(false);
+        gameUI.gameObject.SetActive(false);
         gameoverUI.gameObject.SetActive(false);
-        GameControl.gameObject.SetActive(false);
     }
 
-    public void ShowPauseUI()
+    public void ShowGameUI()
     {
         startUI.gameObject.SetActive(false);
-        pauseUI.gameObject.SetActive(true);
+        gameUI.gameObject.SetActive(true);
         gameoverUI.gameObject.SetActive(false);
-        GameControl.gameObject.SetActive(false);
     }
 
     public void ShowGameoverUI()
     {
         startUI.gameObject.SetActive(false);
-        pauseUI.gameObject.SetActive(false);
+        gameUI.gameObject.SetActive(false);
         gameoverUI.gameObject.SetActive(true);
-        GameControl.gameObject.SetActive(false);
-    }
-
-    public void ShowGameplay()
-    {
-        startUI.gameObject.SetActive(false);
-        pauseUI.gameObject.SetActive(false);
-        gameoverUI.gameObject.SetActive(false);
-        GameControl.gameObject.SetActive(true);
     }
 }

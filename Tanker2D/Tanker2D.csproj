@@ -131,7 +131,7 @@
     <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\RewardBasedVideoAdClient.cs" />
     <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\Utils.cs" />
     <Compile Include="Assets\Scripts\UI\GameoverUI.cs" />
-    <Compile Include="Assets\Scripts\UI\PauseUI.cs" />
+    <Compile Include="Assets\Scripts\UI\GameUI.cs" />
     <Compile Include="Assets\Scripts\UI\SoundController.cs" />
     <Compile Include="Assets\Scripts\UI\StartUI.cs" />
     <Compile Include="Assets\Scripts\UI\UIController.cs" />

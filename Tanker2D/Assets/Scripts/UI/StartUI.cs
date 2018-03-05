@@ -17,6 +17,6 @@ public class StartUI : MonoBehaviour {
     public void PlayButtonClicks()
     {
         UIController.instance.isPause = false;
-        UIController.instance.ShowGameplay();
+        UIController.instance.ShowGameUI();
     }
 }
